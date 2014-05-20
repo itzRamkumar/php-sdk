@@ -3,7 +3,7 @@
     "type": "library",
     "description": "Official PHP development kit for LemonStand2",
     "keywords": ["lemonstand"],
-    "homepage": "",
+    "homepage": "http://github.com/lemonstand/php-sdk",
     "license": "Apache-2.0",
     "require": {
         "php": ">=5.3.0"
@@ -12,9 +12,8 @@
       "phpunit/phpunit": "4.*"
     },
     "autoload": {
-        "classmap": [
-            "src/"
-        ]
-    },
-    "include-path": ["src/"]
+        "psr-0": {
+            "LemonStand": "src/"
+        }
+    }
 }
