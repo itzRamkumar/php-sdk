@@ -77,13 +77,13 @@ Each request returns a response array with the following data structure:
 
 ```
 array(
-	"data" => null,
-	"headers" => null,
-	"status" => null,
-	"success" => false,
+	"data" => array,
+	"headers" => array,
+	"status" => int,
+	"success" => bool,
 	"error" => array(
-		"raw" => null, 
-		"message" => 
+		"raw" => array, 
+		"message" => string
 	),
 );
 ```
