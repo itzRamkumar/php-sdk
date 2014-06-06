@@ -36,7 +36,7 @@ Usage
 
 First, you need to  create a client.
 
-```
+```php
 $config = array(
     'shop' => 'store.lemonstand.com',
     'key' => 'hyfdNt0buc1ENxfec06YOGJQHh8bwqb3dMuBHMXI',
@@ -55,7 +55,7 @@ $products = $client->get('/products');
 
 To send data to the API, pass a second argument as an array.
 
-```
+```php
 $data = array(
     "in_stock_amount" => 500,
     "is_on_sale" => 1,
@@ -75,7 +75,7 @@ echo var_dump($res["body"]);
 ###Response 
 Each request returns a response array with the following data structure:
 
-```
+```php
 array(
 	"data" => array,
 	"headers" => array,
