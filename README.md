@@ -1,7 +1,7 @@
 Official PHP SDK
 ===
 
-https://travis-ci.org/lemonstand/php-sdk.svg?branch=master
+![Travis](https://travis-ci.org/lemonstand/php-sdk.svg?branch=master)
 
 The [LemonStand](https://lemonstand.com) php-sdk is a simple to use interface for the API to help you get off the ground quickly and efficiently.
 
