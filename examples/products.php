@@ -1,6 +1,7 @@
 <?php
+
 /*
- * Copyright 2014 LemonStand eCommerce.
+ * Copyright 2014 LemonStand eCommerce Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -30,6 +31,4 @@ $client = new \LemonStand\sdk\Client(array(
 ));
 
 $product = $client->get('/shop/products');
-
-
 echo var_dump($product['body']);

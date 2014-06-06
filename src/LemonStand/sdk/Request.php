@@ -1,8 +1,23 @@
 <?php namespace LemonStand\sdk;
 
-/**
+
+/*
+ * Copyright 2014 LemonStand eCommerce Inc.
  * @author LemonStand <chris@lemonstand.com>
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  */
+
 class Request
 {
 	public $uri;
@@ -19,7 +34,7 @@ class Request
 	public $max_redirects;
 	public $follow_redirects = false;
 
-	public function __construct($attrs = null) {
+	public function __construct ($attrs = null) {
 		if (!is_array($attrs)) {
 			return;
 		}
@@ -90,7 +105,6 @@ class Request
 			curl_setopt($ch, CURLOPT_SSLKEYPASSWD,  $this->client_passphrase);
 		}
 
-
 		$response = curl_exec($curl);
 
 		if ($response === false) {
@@ -98,7 +112,6 @@ class Request
 		}
 
 		$header_size = curl_getinfo($curl, CURLINFO_HEADER_SIZE);
-
 		$body = substr($response, $header_size);
 		$response_header_string = substr($response, 0, $header_size);
 		$headers = $this->getHttpResponseHeaders($response_header_string);
@@ -107,7 +120,7 @@ class Request
 		return array($body, $headers, $code);
 	}
 
-	public function buildUserAgent() {
+	public function buildUserAgent () {
 		$user_agent = 'User-Agent: LemonStand/ (cURL/';
 		$curl = \curl_version();
 
@@ -183,5 +196,4 @@ class Request
 		
 		return $headers;
 	}
-
 }
