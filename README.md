@@ -51,7 +51,7 @@ $client= new \LemonStand\sdk\Client($config);
 
 Then you can call specific endpoints of the API.
 
-```
+```php
 $products = $client->get('/products');
 ```
 
