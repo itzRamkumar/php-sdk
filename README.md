@@ -81,8 +81,8 @@ Each request returns a response array with the following data structure:
 array(
 	"data" => array,
 	"headers" => array,
-	"status" => int,
-	"success" => bool,
+	"status" => integer,
+	"success" => boolean,
 	"error" => array(
 		"raw" => array, 
 		"message" => string
