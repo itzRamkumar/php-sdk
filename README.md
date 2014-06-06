@@ -20,7 +20,7 @@ Installation
 
 Add this line to your composer.json file:
 
-```
+```json
 {
   "require": {
     "lemonstand/php-sdk": "dev-master"
