@@ -23,12 +23,18 @@ require_once '../src/LemonStand/sdk/Client.php';
 require_once '../src/LemonStand/sdk/Request.php';
 require_once '../src/LemonStand/sdk/Http.php';
 
+// You need to add in real API credentials
 $client = new \LemonStand\sdk\Client(array(
-	'shop' => 'store9.local.io',
+	'shop' => 'store9.lemonstand.com',
 	'key' => 'g6WwrZFYkxowur9VxNxuME5ZamgxXpqMYIRsfhLz',
 	'secret' => 'g6WwrZFYkxowur9VxNxuME5ZamgxXpqMYIRsfhLz',
 	'token' => 'g6WwrZFYkxowur9VxNxuME5ZamgxXpqMYIRsfhLz'
 ));
 
-$product = $client->get('/shop/products');
-echo var_dump($product['body']);
+$product = $client->get('/products');
+
+if (!$products['success']) {
+	throw new \Exception($products["error"]["message"]);
+}
+
+echo var_dump($products['body']);
