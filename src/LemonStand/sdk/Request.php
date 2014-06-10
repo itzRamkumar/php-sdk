@@ -1,8 +1,7 @@
 <?php namespace LemonStand\sdk;
 
-
 /*
- * Copyright 2014 LemonStand eCommerce Inc.
+ * Copyright (c) 2014 LemonStand eCommerce Inc.
  * @author LemonStand <chris@lemonstand.com>
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,6 +15,13 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
+ */
+
+/*
+ * Copyright (c) 2012 Nate Good <me@nategood.com>
+ *
+ * Some portions of this code were forked from https://github.com/nategood/httpful
+ *
  */
 
 class Request

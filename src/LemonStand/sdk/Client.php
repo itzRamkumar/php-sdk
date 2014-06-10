@@ -1,7 +1,7 @@
 <?php namespace LemonStand\sdk;
 
 /*
- * Copyright 2014 LemonStand eCommerce Inc.
+ * Copyright (c) 2014 LemonStand eCommerce Inc.
  * @author LemonStand <chris@lemonstand.com>
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
