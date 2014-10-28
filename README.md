@@ -31,7 +31,7 @@ Add this line to your composer.json file:
 Requirements 
 ---
 
-- PHP >=5.3 with the cURL extension installed
+- PHP >=5.4 with the cURL extension installed
 
 Usage 
 ---
